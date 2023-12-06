@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Windows下C++输出中文</title>
+      <link href="/2023/12/06/Windows%E4%B8%8BC++%E8%BE%93%E5%87%BA%E4%B8%AD%E6%96%87/"/>
+      <url>/2023/12/06/Windows%E4%B8%8BC++%E8%BE%93%E5%87%BA%E4%B8%AD%E6%96%87/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;format&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;locale&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">auto</span> <span class="title">main</span><span class="params">()</span> -&gt; <span class="type">int</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 使用wcin及wcout，并设置本地环境为&quot;zh_CN&quot;</span></span><br><span class="line">    wcin.<span class="built_in">imbue</span>(<span class="built_in">locale</span>(<span class="string">&quot;zh_CN&quot;</span>));</span><br><span class="line">    wcout.<span class="built_in">imbue</span>(<span class="built_in">locale</span>(<span class="string">&quot;zh_CN&quot;</span>));</span><br><span class="line">    wstring name;</span><br><span class="line">    wcin &gt;&gt; name;</span><br><span class="line">    wcout &lt;&lt; format(<span class="string">L&quot;你好，&#123;&#125;\n&quot;</span>, name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>c++中的复制语义和移动语义</title>
       <link href="/2023/11/10/c-%E4%B8%AD%E7%9A%84%E5%A4%8D%E5%88%B6%E8%AF%AD%E4%B9%89%E5%92%8C%E7%A7%BB%E5%8A%A8%E8%AF%AD%E4%B9%89/"/>
       <url>/2023/11/10/c-%E4%B8%AD%E7%9A%84%E5%A4%8D%E5%88%B6%E8%AF%AD%E4%B9%89%E5%92%8C%E7%A7%BB%E5%8A%A8%E8%AF%AD%E4%B9%89/</url>
